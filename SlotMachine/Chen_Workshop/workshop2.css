@@ -1,0 +1,45 @@
+/* exercise 2: write CSS for your "handle" graphic to position it correctly next to the
+	rest of the machine. you may also wish to reposition the machine using a similar
+	method. */
+
+#machine
+{
+position: fixed;
+left:0px;
+top:0px;
+}
+
+#handle
+{
+position: fixed;
+left: 526px;
+top:0px;
+}
+
+#slot1
+{
+position: fixed;
+left: 42px;
+top: 109px
+}
+
+#slot2
+{
+position: fixed;
+left: 201px;
+top: 109px;
+}
+
+#slot3
+{
+position: fixed;
+left: 359px;
+top: 109px;
+}
+
+#machine_text
+{
+position: fixed;
+left: 0px;
+top: 0px;
+}

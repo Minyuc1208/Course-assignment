@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My page</title>
+	</head>
+
+	<body>
+		<div>The header</div>
+		<ul id="myList">
+			<li id="first">A list</li>
+			<li>A second list</li>
+			<li>A third List</li>
+		</ul>
+		<div>The footer</div>
+		<script>
+			var elem = document.getElementById("myList");
+			// add your code here to test and see if elem has any children
+            
+            if ( elem.length != 0 ){  
+            var elements = document.getElementsByTagName('li');
+            console.log(elements.length);
+}
+			// output the result in console.log.
+            console.log(elem.firstChild.parentNode);
+            console.log(elem.firstChild.nextSibling);
+            console.log(document.body.lastChild.nextSibling);//The answer of Problem No.5 is Yes. 
+		</script>	
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 5</title>
+         <style>
+        .hide {
+            display:none; 
+             }
+      </style>
+    
+  </head>	
+  <body>
+	<div class="container login">
+		<form id="hmwk5" action="/login/" method="post">
+			<fieldset>
+				<input type="radio" name="login" value="login" id="login" checked="true"/>
+				<label for="login">Login</label><br>
+                
+				<input type="radio" name="login" value="newacct" id="newacct"/>
+				<label for="newacct">New Account</label><br>
+                
+				<input type="radio" name="login" value="guest" id="guest"/>
+				<label for="guest">Continue as Guest</label><br>
+                
+				 <div id= "na_login_fields" class="hide">
+                   <label for="na_username" id="na_usernamelbl"> New Username:</label> 
+                     <input type="text" id="na_username" name="na_username"><br/>
+                     
+                   <label for="na_password" id="na_passwordlbl">Password:</label> 
+                     <input type="password" id="na_password" name="na_password"><br/>
+                    <label for="match" id="match" class="hide">
+                        <font color="red">Passwords must match!</font>
+                    </label>
+                     
+                   <label for="na_vpassword" id="na_vpasswordlbl">Verify Password:</label>
+                     <input type="password" id="na_vpassword" name="na_vpassword"><br/> 
+                </div>
+                
+                <div id="login_fields">
+				<label for="username">Enter Username:</label>
+				<input type="text" id="username" name="username" /><br/>
+                
+				<label for="pwd">Enter Password:</label>
+				<input type = "password" id="pwd" name="pwd" /><br/>
+                    
+                <input type="checkbox" id="showPwd">
+				<label for="showPwd">show password</label><br/>
+                </div>	
+               
+                 
+                <div id="submit" class="hide">
+				<input type="submit" value="login"/>		
+				</div>
+			</fieldset>
+			
+		</form>
+        <div id='welcome' class="hide"></div>
+         <div id='changePwd' class="hide">
+              <h2>Set your new password</h2>
+                    <label for="oldPwd">Old password:</label>
+              <input type="password" id="oldPwd" name="oldPwd"><br/>
+                     <label for="match_old" id="match_old" class="hide">
+                        <font color="red">Wrong old password!</font>
+                    </label>
+             
+                    <label for="newPwd">New password:</label>
+                    <input type="password" id="newPwd" name="newPwd"><br/>
+                     <label for="match_new" id="match_new" class="hide">
+                        <font color="red">Passwords must match!</font>
+                    </label>
+             
+                    <label for="vNew">Verify new password:</label>
+                    <input type="password" id="vNew" name="vNew"><br/>
+                    <button id='saveButton'>Save</button>
+                </div>
+        <div id="result" class="hide"></div>
+	</div>
+      
+         
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="utilities.js"></script>
+    <script src="hmwk5.js"></script>
+  </body>
+</html>
+	
